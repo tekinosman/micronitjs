@@ -137,7 +137,6 @@ Additional assertions can be added after the `test` function in [micronit.js/uni
 
 ## TODO
 
-- [ ] Add screenshots
 - [ ] Consider adding more assertions
 
 ## Contributing
