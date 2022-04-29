@@ -40,7 +40,9 @@ const unit = {
         
         .unit-error,
         .unit-error-stack {
-          margin-left: 2ch;
+          margin-left: 3ch;
+          /* Needed to preserve error stack newlines */
+          white-space: pre-line;
         }
       </style>`;
       for (const category in tests) {
