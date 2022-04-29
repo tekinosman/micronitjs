@@ -1,8 +1,5 @@
 # micronit.js
 
-![Javascript](https://img.shields.io/badge/Javascript-blue)
-![license: MIT](https://img.shields.io/github/license/tekinosman/micronitjs)
-
 micronit.js is a minimal unit testing library for Javascript that works entirely in the browser and has no dependencies.
 
 [How to get it](#how-to-get-it) • [Usage](#usage) • [TODO](#todo) • [Contributing](#contributing)
