@@ -16,7 +16,7 @@ $
 
 or
 
-[Download micronit.js](https://raw.githubusercontent.com/tekinosman/micronitjs/main/micronit.js).
+[Download micronit.js](https://raw.githubusercontent.com/tekinosman/micronitjs/main/micronit.js)
 
 ## Usage
 
@@ -28,7 +28,7 @@ Put
 <script src="<path_to_unit_tests>"></script>
 ```
 
-in the head of an HTML page and add a `micronit` id to the element where you want test results to be shown.
+in the head of any HTML page and add a `micronit` id to the element where you want test results to be shown.
 
 For example, assuming the following folder structure:
 
