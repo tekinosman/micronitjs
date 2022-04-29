@@ -128,7 +128,8 @@ unit.test({
 });
 ```
 
-Open index.html on the browser where result of the tests will be shown.
+Opening index.html in the browser shows the result of the tests:
+![tests-result-screenshot](screenshot.png)
 
 ## ADDING ASSERTIONS
 
