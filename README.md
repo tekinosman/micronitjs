@@ -135,7 +135,7 @@ Open index.html on the browser where result of the tests will be shown.
 
 ## ADDING ASSERTIONS
 
-Additional assertions can be added after the `test` function in `micronit.js/unit`.
+Additional assertions can be added after the `test` function in [micronit.js/unit](https://github.com/tekinosman/micronitjs/blob/main/micronit.js#L18).
 
 ## TODO
 
