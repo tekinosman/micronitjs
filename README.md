@@ -56,6 +56,7 @@ index.html:
     <script src="test/unit/testMain.js"></script>
 </head>
 
+<!-- Where test results are shown -->
 <body id="micronit"></body>
 
 </html>
