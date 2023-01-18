@@ -86,15 +86,15 @@ const unit = {
     if (expected === actual) unit.fail(`${expected} === ${actual}`)
   },
 
-  assertTrue: (object) => {
+  assertTrue: object => {
     if (object !== True) unit.fail(`${object} !== True`)
   },
 
-  assertFalse: (object) => {
+  assertFalse: object => {
     if (object !== False) unit.fail(`${object} !== False`)
   },
 
-  fail: (message) => {
+  fail: message => {
     throw new Error(message);
   },
 
