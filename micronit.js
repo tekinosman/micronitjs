@@ -67,45 +67,31 @@ const unit = {
   },
 
   assert: (expression, message) => {
-    if (!expression) {
-      unit.fail(message);
-    }
+    if (!expression) unit.fail(message);
   },
 
   assertEqual: (expected, actual) => {
-    if (expected !== actual) {
-      unit.fail(`${expected} !== ${actual}`);
-    }
+    if (expected !== actual) unit.fail(`${expected} !== ${actual}`)
   },
 
   assertNotEqual: (expected, actual) => {
-    if (expected == actual) {
-      unit.fail(`${expected} == ${actual}`);
-    }
+    if (expected === actual) unit.fail(`${expected} === ${actual}`)
   },
 
   assertStrictEqual: (expected, actual) => {
-    if (expected !== actual) {
-      unit.fail(`${expected} !== ${actual}`);
-    }
+    if (expected !== actual) unit.fail(`${expected} !== ${actual}`)
   },
 
   assertNotStrictEqual: (expected, actual) => {
-    if (expected === actual) {
-      unit.fail(`${expected} === ${actual}`);
-    }
+    if (expected === actual) unit.fail(`${expected} === ${actual}`)
   },
 
   assertTrue: (object) => {
-    if (object !== True) {
-      unit.fail(`${object} != True`);
-    }
+    if (object !== True) unit.fail(`${object} !== True`)
   },
 
   assertFalse: (object) => {
-    if (object !== False) {
-      unit.fail(`${object} != False`);
-    }
+    if (object !== False) unit.fail(`${object} !== False`)
   },
 
   fail: (message) => {
