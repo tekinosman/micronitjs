@@ -73,8 +73,8 @@ const unit = {
   },
 
   assertEqual: (expected, actual) => {
-    if (expected != actual) {
-      unit.fail(`${expected} != ${actual}`);
+    if (expected !== actual) {
+      unit.fail(`${expected} !== ${actual}`);
     }
   },
 
@@ -97,13 +97,13 @@ const unit = {
   },
 
   assertTrue: (object) => {
-    if (object != True) {
+    if (object !== True) {
       unit.fail(`${object} != True`);
     }
   },
 
   assertFalse: (object) => {
-    if (object != False) {
+    if (object !== False) {
       unit.fail(`${object} != False`);
     }
   },
