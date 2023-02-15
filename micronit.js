@@ -71,11 +71,11 @@ const unit = {
   },
 
   assertEqual: (expected, actual) => {
-    if (expected !== actual) unit.fail(`${expected} !== ${actual}`)
+    if (expected != actual) unit.fail(`${expected} != ${actual}`)
   },
 
   assertNotEqual: (expected, actual) => {
-    if (expected === actual) unit.fail(`${expected} === ${actual}`)
+    if (expected == actual) unit.fail(`${expected} == ${actual}`)
   },
 
   assertStrictEqual: (expected, actual) => {
