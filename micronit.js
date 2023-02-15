@@ -87,11 +87,11 @@ const unit = {
   },
 
   assertTrue: object => {
-    if (object !== True) unit.fail(`${object} !== True`)
+    if (object !== true) unit.fail(`${object} !== true`)
   },
 
   assertFalse: object => {
-    if (object !== False) unit.fail(`${object} !== False`)
+    if (object !== false) unit.fail(`${object} !== false`)
   },
 
   fail: message => {
