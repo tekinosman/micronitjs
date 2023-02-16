@@ -8,8 +8,8 @@ const categoryContainer = {
               ${this.units}
             </div>`;
   },
-  addUnit(class_, value) {
-    this.units += unit.buildHTML(class_, value);
+  addUnit(outcome, value) {
+    this.units += unit.buildHTML(outcome, value);
   },
   addToPage() {
     micronit.innerHTML += this.buildHTML();
@@ -22,8 +22,8 @@ const categoryContainer = {
 };
 
 const unit = {
-  buildHTML(class_, value) {
-    return `<div class=${class_}>${value}</div>`
+  buildHTML(outcome, value) {
+    return `<div class=${outcome}>${value}</div>`
   },
   test(tests) {
     document.addEventListener("DOMContentLoaded", () => {
