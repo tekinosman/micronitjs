@@ -2,17 +2,20 @@ const categoryContainer = {
   name: "",
   units: "",
   addUnit(class_, value) {
-    categoryContainer.units += `<div class=${class_}>${value}</div>`;
+    this.units += `<div class=${class_}>${value}</div>`;
   },
   addToPage() {
     micronit.innerHTML += `<div class=units>
-                            <h2 class=category>${categoryContainer.name}</h2>
-                            ${categoryContainer.units}
+                            <h2 class=category>${this.name}</h2>
+                            ${this.units}
                            </div>`;
 
-    // Needed for correct generation of the next category
-    categoryContainer.units = "";
+    this.reset()
   },
+  reset() {
+    this.name = "";
+    this.units = "";
+  }
 };
 
 const unit = {
