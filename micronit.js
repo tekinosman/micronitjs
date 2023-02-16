@@ -3,7 +3,7 @@ const categoryContainer = {
   units: "",
 
   buildHTML() {
-    return `<div class=units>
+    return `<div>
               <h2>${this.name}</h2>
               ${this.units}
             </div>`;
