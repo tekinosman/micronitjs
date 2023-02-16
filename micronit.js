@@ -1,16 +1,22 @@
 const categoryContainer = {
   name: "",
   units: "",
+
+  buildUnit(class_, value) {
+    return `<div class=${class_}>${value}</div>`
+  },
+  buildTests() {
+    return `<div class=units>
+              <h2 class=category>${this.name}</h2>
+              ${this.units}
+            </div>`;
+  },
   addUnit(class_, value) {
-    this.units += `<div class=${class_}>${value}</div>`;
+    this.units += this.buildUnit(class_, value);
   },
   addToPage() {
-    micronit.innerHTML += `<div class=units>
-                            <h2 class=category>${this.name}</h2>
-                            ${this.units}
-                           </div>`;
-
-    this.reset()
+    micronit.innerHTML += this.buildTests();
+    this.reset();
   },
   reset() {
     this.name = "";
