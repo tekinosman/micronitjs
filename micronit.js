@@ -2,9 +2,6 @@ const categoryContainer = {
   name: "",
   units: "",
 
-  buildUnit(class_, value) {
-    return `<div class=${class_}>${value}</div>`
-  },
   buildTests() {
     return `<div class=units>
               <h2 class=category>${this.name}</h2>
@@ -12,7 +9,7 @@ const categoryContainer = {
             </div>`;
   },
   addUnit(class_, value) {
-    this.units += this.buildUnit(class_, value);
+    this.units += unit.buildHTML(class_, value);
   },
   addToPage() {
     micronit.innerHTML += this.buildTests();
@@ -25,6 +22,9 @@ const categoryContainer = {
 };
 
 const unit = {
+  buildHTML(class_, value) {
+    return `<div class=${class_}>${value}</div>`
+  },
   test(tests) {
     document.addEventListener("DOMContentLoaded", () => {
       document.head.innerHTML += `
