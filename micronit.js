@@ -2,7 +2,7 @@ const categoryContainer = {
   name: "",
   units: "",
 
-  buildTests() {
+  buildHTML() {
     return `<div class=units>
               <h2 class=category>${this.name}</h2>
               ${this.units}
@@ -12,7 +12,7 @@ const categoryContainer = {
     this.units += unit.buildHTML(class_, value);
   },
   addToPage() {
-    micronit.innerHTML += this.buildTests();
+    micronit.innerHTML += this.buildHTML();
     this.reset();
   },
   reset() {
