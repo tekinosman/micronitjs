@@ -4,7 +4,7 @@ const categoryContainer = {
 
   buildHTML() {
     return `<div class=units>
-              <h2 class=category>${this.name}</h2>
+              <h2>${this.name}</h2>
               ${this.units}
             </div>`;
   },
