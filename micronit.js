@@ -13,7 +13,6 @@ const categoryContainer = {
   },
   addToPage() {
     micronit.innerHTML += this.buildHTML();
-    this.reset();
   },
   reset() {
     this.name = "";
@@ -71,6 +70,7 @@ const unit = {
           }
         }
         categoryContainer.addToPage();
+        categoryContainer.reset();
       }
     });
   },
