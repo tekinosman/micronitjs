@@ -1,4 +1,4 @@
-const categoryContainer = {
+let categoryContainer = {
   name: "",
   units: "",
 
@@ -20,7 +20,7 @@ const categoryContainer = {
   }
 };
 
-const unit = {
+let unit = {
   buildHTML(outcome, value) {
     return `<div class=${outcome}>${value}</div>`
   },
