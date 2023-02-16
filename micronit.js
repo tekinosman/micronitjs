@@ -29,12 +29,12 @@ const unit = {
         }
         
         .unit-passed:before {
-          content: "✔ ";
+          content: "\u2714 ";
           color: #2ECC40;
         }
         
         .unit-failed:before {
-          content: "✖ ";
+          content: "\u2716 ";
           color: #FF4136;
         }
         
