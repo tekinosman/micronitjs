@@ -4,20 +4,24 @@ micronit.js is a minimal unit testing library for Javascript that runs in the br
 
 [How to get it](#how-to-get-it) • [Usage](#usage) • [Adding assertions](#adding-assertions) • [TODO](#todo) • [Contributing](#contributing)
 
-## How to get it
+## Installation
+
+Clone the Github repository:
 
 ```console
 $ gh repo clone tekinosman/micronitjs
 $
 ```
 
-or
-
-[Download micronit.js](https://raw.githubusercontent.com/tekinosman/micronitjs/main/micronit.js)
+or download [the micronit.js file](https://raw.githubusercontent.com/tekinosman/micronitjs/main/micronit.js) directly.
 
 ## Usage
 
-Put
+To use micronit.js, you need to include 3 script tags in the head of your HTML page:
+
+- The micronit.js library
+- The function(s) to be tested
+- The unit tests
 
 ```html
 <script src="<path_to_micronit>"></script>
@@ -25,19 +29,21 @@ Put
 <script src="<path_to_unit_tests>"></script>
 ```
 
-in the head of any HTML page and add a `micronit` id to the element where you want test results to be shown.
+You also need to add a *micronit* id to the element where you want the test results to be displayed.
 
 For example, assuming the following folder structure:
 
-    <project_root>
-      index.html
-      main.js
-      micronit.js
-      test
-        unit
-          testMain.js
+<pre>
+<strong>&ltproject_root&gt</strong>
+├── index.html
+├── main.js
+├── micronit.js
+└── <strong>test</strong>
+    └── <strong>unit</strong>
+        └── testMain.js
+</pre>
 
-index.html:
+index.html should look like this:
 
 ```html
 <html>
@@ -59,7 +65,7 @@ index.html:
 </html>
 ```
 
-main.js:
+main.js should contain the function(s) to be tested, such as:
 
 ```javascript
 function sum(n, m) {
@@ -79,7 +85,7 @@ function divide(n, m) {
 }
 ```
 
-test/unit/testMain.js:
+test/unit/testMain.js should contain the unit tests, using the *unit.test* function and the available assertions. For example:
 
 ```javascript
 // Import the needed assertions
@@ -133,7 +139,7 @@ Opening index.html in the browser shows the test results:
 
 ## ADDING ASSERTIONS
 
-Additional assertions can be added after the `test` function in [micronit.js/unit](https://github.com/tekinosman/micronitjs/blob/main/micronit.js#L18).
+Additional assertions can be added after the *test* function in [micronit.js/unit](https://github.com/tekinosman/micronitjs/blob/main/micronit.js#L18).
 
 ## TODO
 
@@ -142,7 +148,7 @@ Additional assertions can be added after the `test` function in [micronit.js/uni
 
 ## Contributing
 
-Contributions to this repository are welcome, but read the following before doing so.
+Contributions to this repository are welcome, but follow these guidelines before submitting an issue or a pull request.
 
 ### Submitting an issue
 
@@ -150,7 +156,7 @@ Issue submissions are for bug reports, questions and suggestions.
 
 ### Feature requests
 
-Feature requests might be taken into consideration if they don't stray out of the library's scope.
+Feature requests might be taken into consideration if they stay within the library's scope. This library aims to be minimal and simple, so not all features may be accepted.
 
 ## License
 
