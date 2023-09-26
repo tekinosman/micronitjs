@@ -137,7 +137,7 @@ Opening index.html in the browser shows the test results:
 
 ## ADDING ASSERTIONS
 
-Additional assertions can be added after the *test* function in [micronit.js/unit](https://github.com/tekinosman/micronitjs/blob/main/micronit.js#L18).
+Additional assertions can be added after the *test* function in [micronit.js/unit](https://github.com/tekinosman/micronitjs/blob/main/micronit.js#L77).
 
 ## TODO
 
