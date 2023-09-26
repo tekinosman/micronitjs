@@ -2,8 +2,6 @@
 
 micronit.js is a minimal unit testing library for Javascript that runs in the browser and does not require any dependencies.
 
-[How to get it](#how-to-get-it) • [Usage](#usage) • [Adding assertions](#adding-assertions) • [TODO](#todo) • [Contributing](#contributing)
-
 ## Installation
 
 Clone the Github repository:
