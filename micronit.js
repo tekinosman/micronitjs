@@ -28,13 +28,9 @@ const unit = {
     document.addEventListener("DOMContentLoaded", () => {
       document.head.innerHTML += `
       <style>
-        #micronit {
-          color: #111;
-        }
+        #micronit { color: #111 }
         
-        h2 {
-          margin-bottom: 0;
-        }
+        h2 { margin-bottom: 0 }
         
         .unit-passed:before {
           content: "\u2714 ";
@@ -46,8 +42,7 @@ const unit = {
           color: #FF4136;
         }
         
-        .unit-error,
-        .unit-error-stack {
+        .unit-error, .unit-error-stack {
           margin-left: 3ch;
           /* Needed to preserve error stack newlines */
           white-space: pre-line;
