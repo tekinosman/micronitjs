@@ -1,4 +1,4 @@
-let categoryContainer = {
+const categoryContainer = {
   name: "",
   units: "",
 
@@ -20,7 +20,7 @@ let categoryContainer = {
   }
 };
 
-let unit = {
+const unit = {
   buildHTML(outcome, value) {
     return `<div class=${outcome}>${value}</div>`
   },
@@ -55,9 +55,9 @@ let unit = {
       </style>`;
       for (const category in tests) {
         categoryContainer.name = category;
-        for (let unit in tests[category]) {
-          let unitName = unit;
-          let unitFunction = tests[category][unit];
+        for (const unit in tests[category]) {
+          const unitName = unit;
+          const unitFunction = tests[category][unit];
           try {
             unitFunction();/*✔*/
             categoryContainer.addUnit(`unit-passed`, unitName);
