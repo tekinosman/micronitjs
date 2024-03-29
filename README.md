@@ -7,7 +7,7 @@ micronit.js is a minimal unit testing library for Javascript that runs in the br
 Clone the Github repository:
 
 ```console
-$ gh repo clone tekinosman/micronitjs
+$ git clone https://github.com/tekinosman/micronitjs.git
 $
 ```
 
